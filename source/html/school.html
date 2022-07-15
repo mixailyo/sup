@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  @@include("source/html/base/head.html")
+  <title>SUP — Beavers sup school</title>
+
+</head>
+<body>
+
+  <div style="display: none;">
+    @@include("build/img/sprite_auto.svg")
+  </div>
+
+  @@include("source/html/base/header.html")
+
+  <main class="main main--inner">
+    @@include("source/html/base/breadcrumbs.html", {
+      "link1": "Главная",
+      "link2": "Школы и станции",
+      "link3": "Beavers sup school",
+    })
+
+    @@include("source/html/components/school.html")
+
+    @@include("source/html/components/timetable.html")
+    
+    @@include("source/html/components/school-tours.html")
+    
+    @@include("source/html/components/school-training.html")
+
+    @@include("source/html/components/reviews.html")
+
+    @@include("source/html/components/school-instructors.html")
+
+    @@include("source/html/components/gallery.html")
+
+    @@include("source/html/components/advertising--zavidovo.html")
+  </main>
+
+  @@include("source/html/base/footer.html")
+
+
+
+
+
+
+
+
+  @@include("source/html/base/modal.html", {
+    "name": "feedback"
+  })
+
+  @@include("source/html/base/modal.html", {
+    "name": "success",
+    "fitContent": true,
+    "noScale": true,
+    "mod": "some-mod"
+  })
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

@@ -13,6 +13,24 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 $color-neon-blue:                   #2c39f2;
 $color-torch-red:                   #ff1553;
 
+$color-dark-cerulean:               #00508B;
+$color-dodger-blue:                 #2C78F6;
+$color-rose-of-sharon:              #B14F29;
+$color-sorbus:                      #DF6435;
+$color-burnt-sienna:                #E97D54;
+$color-coral:                       #FF8056;
+$color-neon-carrot:                 #FC902D;
+$color-matterhorn:                  #585757;
+$color-dim-gray:                    #696969;
+$color-grey:                        #757575;
+$color-nobel:                       #969696;
+$color-dark-gray:                   #A3A3A3;
+$color-silver:                      #C4C4C4;
+$color-whisper:                     #E9E9E9;
+$color-white-smoke:                 #F7F7F7;
+$color-gainsboro:                   #DDDDDD;
+$color-royal-blue:                  #1E62F0;
+
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
@@ -27,7 +45,8 @@ $fz-default:                        16px;
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
-$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+$ff-default:                        'Montserrat', sans-serif;
+$ff-primary:                        'Inter', sans-serif;
 
 // Animation
 // ---------------------------------

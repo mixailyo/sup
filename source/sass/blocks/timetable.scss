@@ -1,0 +1,205 @@
+.timetable {
+  &--edit {
+    .timetable__submit {
+      display: flex;
+    }
+
+    .timetable__edit {
+      display: none;
+    }
+    
+    .timetable__table-column-add {
+      display: flex;
+    }
+
+    @media screen and (min-width: 1280px) {
+      .timetable__table-column-day-number {
+        margin-bottom: 10px;
+        margin-top: -25px;
+      }
+  
+      .timetable__table-column-day-of-the-week {
+        border: unset;
+        padding: 0 0 0 30px;
+      }
+
+      .timetable__table {
+        display: flex;
+        flex-direction: column;
+        background-color: unset;
+      }
+  
+      .timetable__table-column {
+        padding: 12px;
+        background-color: $color-default-white;
+        border: 1px solid #E8E8E8;
+  
+        &:not(:last-child) {
+          margin-bottom: 22px;
+        }
+      }
+  
+      div.timetable__table-column-wrapper {
+        padding: 0;
+      }
+  
+      .timetable__table-column-lessons {
+        flex-direction: row;
+      }
+  
+      .timetable__table-column-lesson {
+        max-width: 115px;
+  
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    
+  }
+}
+.timetable__title {
+}
+.timetable__wrapper {
+  background: $color-white-smoke;
+  border-radius: 8px;
+  @include adaptiveDesktopToMobile('padding-top', 30, 20);
+  @include adaptiveDesktopToMobile('padding-bottom', 30, 20);
+  @include adaptiveDesktopToMobile('padding-left', 30, 15);
+  @include adaptiveDesktopToMobile('padding-right', 30, 15);
+  @include adaptiveDesktopToMobile('margin-left', -30, -15);
+  @include adaptiveDesktopToMobile('margin-right', -30, -15);
+}
+.timetable__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.timetable__month {
+  @include adaptiveDesktopToMobile('font-size', 18, 16);
+  color: $color-matterhorn;
+}
+.timetable__navigation {
+  display: flex;
+  align-items: center;
+
+  .navigation-button {
+    @include adaptiveDesktopToMobile('width', 35, 30);
+    @include adaptiveDesktopToMobile('height', 35, 30);
+  }
+}
+.timetable__period {
+  @include adaptiveDesktopToMobile('margin-left', 32, 10);
+  @include adaptiveDesktopToMobile('margin-right', 32, 10);
+  @include adaptiveDesktopToMobile('font-size', 16, 14);
+}
+.timetable__table {
+  @include adaptiveDesktopToMobile('margin-top', 32, 26);
+  background-color: $color-default-white;
+  border: 1px solid $color-whisper;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(7, 167px);
+
+  @include vp-1279 {
+    overflow-x: auto;
+  }
+}
+.timetable__table-column {
+
+  &:not(:last-child) {
+    border-right: 1px solid $color-whisper;
+  }
+}
+.timetable__table-column-day-of-the-week {
+  padding: 12px;
+  border-bottom: 1px solid $color-whisper;
+  color: $color-nobel;
+  @include adaptiveDesktopToMobile('font-size', 16, 14);
+}
+.timetable__table-column-wrapper {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 47px);
+}
+.timetable__table-column-day-number {
+  font-weight: 500;
+  @include adaptiveDesktopToMobile('font-size', 21, 16);
+  color: $color-nobel;
+  margin-bottom: 44px;
+}
+.timetable__table-column-lessons {
+  @include reset-list;
+  
+  display: flex;
+  flex-direction: column;
+}
+.timetable__table-column-lesson {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 4px;
+  padding: 4px;
+  font-family: $ff-primary;
+
+  &--blue {
+    background: linear-gradient(0deg, rgba(0, 80, 139, 0.1), rgba(0, 80, 139, 0.1)), #FFFFFF;
+    color: $color-dark-cerulean;
+  }
+
+  &--red {
+    background: linear-gradient(0deg, rgba(223, 84, 53, 0.1), rgba(223, 84, 53, 0.1)), #FFFFFF;
+    color: $color-sorbus;
+  }
+
+  &--yellow {
+    background: rgba(252, 180, 45, 0.1);
+    color: $color-neon-carrot;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}
+.timetable__table-column-lesson-time {
+  margin-bottom: 15px;
+}
+.timetable__table-column-lesson-name {
+}
+.timetable__edit {
+  background: unset;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  color: $color-sorbus;
+  @include adaptiveDesktopToMobile('font-size', 16, 14);
+}
+.timetable__edit-icon {
+  margin-right: 5px;
+}
+.timetable__submit {
+  display: none;
+  @include adaptiveDesktopToMobile('margin-top', 60, 20);
+}
+.timetable__table-column-add {
+  display: none;
+  align-items: center;
+}
+.timetable__table-column-add-btn {
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $color-sorbus;
+  background-color: unset;
+  margin-left: 20px;
+  padding: 0;
+
+  @include vp-1279 {
+    margin: 16px auto;
+  }
+}

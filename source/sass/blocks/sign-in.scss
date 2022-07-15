@@ -1,0 +1,240 @@
+.sign-in {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+
+  &--password {
+    .sign-in__form {
+      @include adaptiveDesktopToMobile('padding-top', 45, 40);
+      @include adaptiveDesktopToMobile('padding-bottom', 45, 40);
+    }
+
+    .sign-in__input-wrapper {   
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  @include vp-1279 {
+    height: auto;
+  }
+}
+.sign-in__picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 50vw;
+
+  @include vp-1279 {
+    display: none;
+  }
+}
+.sign-in__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @include adaptiveDesktopToMobile('gap', 230, 0);
+  @include adaptiveDesktopToMobile('padding-top', 180, 15);
+
+  @include vp-1279 {
+    grid-template-columns: auto;
+  }
+}
+.sign-in__content {
+  grid-column-start: 2;
+  @include adaptiveDesktopToMobile('width', 470, 345);
+
+  @include vp-1279 {
+    grid-column-start: unset;
+    margin: 0 auto;
+  }
+}
+.sign-in__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $color-default-white;
+  box-shadow: 0px 8px 30px -4px rgba(30, 30, 30, 0.2);
+  border-radius: 16px;
+  @include adaptiveDesktopToMobile('padding-top', 60, 50);
+  @include adaptiveDesktopToMobile('padding-bottom', 60, 50);
+  @include adaptiveDesktopToMobile('padding-right', 30, 15);
+  @include adaptiveDesktopToMobile('padding-left', 30, 15);
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  @include vp-767 {
+    margin-top: 120px;
+  }
+}
+.sign-in__form-suptitle {
+  font-size: 12px;
+  color: $color-nobel;
+  margin-bottom: 14px;
+}
+.sign-in__form-title {
+  margin: 0;
+
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.sign-in__form-subtitle {
+  font-size: 14px;
+  text-align: center;
+  max-width: 312px;
+  margin: 0 auto;
+}
+.sign-in__form-wrapper {
+  @include adaptiveDesktopToMobile('margin-top', 35, 35);
+  @include adaptiveDesktopToMobile('margin-bottom', 55, 40);
+}
+.sign-in__radio-wrapper {
+  display: inline-flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    @include adaptiveDesktopToMobile('margin-right', 50, 40);
+  }
+}
+.sign-in__input-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    @include adaptiveDesktopToMobile('min-width', 410, 315);
+    border: 1px solid $color-gainsboro;
+    border-radius: 4px;
+    min-height: 40px;
+    padding: 0 10px;
+  }
+
+  label {
+    font-size: 12px;
+    color: $color-nobel;
+    margin-left: 20px;
+    margin-bottom: 4px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+.sign-in__form-input {
+  opacity: 0;
+  position: absolute;
+
+  &:checked {
+    + label {
+      color: $color-sorbus;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 4px;
+        transform: translateY(-50%);
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: currentColor;
+      }
+    }
+  }
+}
+.sign-in__form-label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid currentColor;
+    margin-right: 10px;
+  }
+}
+.sign-in__form-submit {
+  min-width: 204px;
+}
+.sign-in__registration {
+  text-align: center;
+  font-size: 14px;
+}
+.sign-in__registration-text {
+}
+.sign-in__registration-link {
+  color: $color-sorbus;
+}
+.sign-in__forget-password {
+  display: block;
+  text-align: center;
+  margin: 10px auto 0;
+  color: $color-sorbus;
+  font-size: 14px;
+}
+
+.sign-in__social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.06);
+  border-radius: 40px;
+  height: 50px;
+  @include adaptiveDesktopToMobile('min-width', 410, 315);
+  font-weight: 500;
+  font-size: 14px;
+  color: $color-default-white;
+  transition: opacity $trans-default;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &--vk {
+    background-color: $color-dodger-blue;
+  }
+
+  &--mailru {
+    background-color: $color-royal-blue;
+  }
+}
+.sign-in__social-btn-logo {
+  margin-right: 8px;
+}
+.sign-in__social-btn-text {
+}
+.sign-in__with-phone {
+  display: block;
+  font-size: 14px;
+  color: $color-sorbus;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1px;
+    @include adaptiveDesktopToMobile('min-width', 410, 315);
+    background-color: rgba(175, 184, 196, 0.3);
+  }
+}
+
+.sign-in__with-phone-text {
+  background-color: $color-default-white;
+  padding: 0 12px;
+  position: relative;
+}

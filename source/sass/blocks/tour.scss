@@ -1,0 +1,143 @@
+.tour {
+
+  &--walk {
+    .tour__date {
+      font-weight: 500;
+      font-size: 14px;
+      text-transform: unset;
+      color: inherit;
+      margin-bottom: 5px;
+    }
+
+    .tour__price {
+      @include adaptiveDesktopToMobile('margin-bottom', 40, 0);
+    }
+
+    .tour__sign-in {
+      @include adaptiveDesktopToMobile('margin-bottom', 60, 0);
+    }
+
+    @include vp-767 {
+      .tour__dates {
+        order: 3;
+        margin-bottom: 15px;
+      }
+
+      .tour__organizer {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+.tour__wrapper {
+  display: grid;
+  grid-template-columns: 8.1fr 4fr;
+  @include adaptiveDesktopToMobile('column-gap', 40, 20);
+
+  @include vp-767 {
+    grid-template-columns: 5fr 7fr;
+  }
+}
+.tour__title {
+  font-weight: 600;
+  @include adaptiveDesktopToMobile('font-size', 32, 16);
+  text-transform: uppercase;
+  margin: 0 0 5px;
+
+  @include vp-767 {
+    order: 0;
+    grid-column: span 2;
+    margin: 0 0 15px;
+  }
+}
+.tour__picture {
+  grid-row: span 7;
+
+  @include vp-767 {
+    order: 1;
+    grid-row: span 4;
+  }
+}
+.tour__dates {
+  @include reset-list;
+
+  display: flex;
+
+  @include vp-767 {
+    order: 2;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
+.tour__date {
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $color-dark-cerulean;
+
+  &:not(:last-child) {
+    @include adaptiveDesktopToMobile('margin-right', 36, 16);
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+  }
+}
+.tour__organizer {
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $color-sorbus;
+  @include adaptiveDesktopToMobile('margin-bottom', 30, 5);
+
+  @include vp-767 {
+    order: 3;
+  }
+}
+.tour__price {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $color-dark-cerulean;
+  margin-bottom: 10px;
+
+  @include vp-767 {
+    order: 4;
+  }
+}
+.tour__info {
+  @include reset-list;
+  @include adaptiveDesktopToMobile('margin-bottom', 40, 20);
+
+  @include vp-767 {
+    order: 5;
+    grid-column: span 2;
+    margin-top: 10px;
+  }
+}
+.tour__info-item {
+  font-weight: 500;
+  font-size: 14px;
+  
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+.tour__sign-in {
+  @include adaptiveDesktopToMobile('margin-bottom', 100, 0);
+
+  @include vp-767 {
+    order: 7;
+    grid-column: span 2;
+  }
+}
+.tour__description {
+  max-width: 670px;
+  @include adaptiveDesktopToMobile('font-size', 16, 14);
+
+  @include vp-767 {
+    order: 6;
+    grid-column: span 2;
+    margin-bottom: 24px;
+  }
+}

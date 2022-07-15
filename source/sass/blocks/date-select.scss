@@ -1,0 +1,59 @@
+.date-select {
+  position: relative;
+  border: unset;
+  background-color: unset;
+  padding: 10px 15px;
+  outline: none;
+  max-width: 100%;
+  border: 1px solid $color-gainsboro;
+  border-radius: 30px;
+  cursor: pointer;
+
+  &::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent
+  }
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-clear-button {
+    z-index: -10
+  }
+
+  &::-webkit-input-placeholder {
+    z-index: 99
+  }
+  
+  &:placeholder {
+    z-index: 99
+  }
+
+  &::before {
+    width: 100%;
+    content: attr(data-value);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/svg/icon-date.svg);
+    pointer-events: none;
+  }
+
+  &--active {
+    &::before {
+      color: inherit;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+<section class="account">
+  <div class="container">
+    <div class="account__main-wrapper">
+      <h1 class="account__title">Личный кабинет</h1>
+      <nav class="account__menu account__menu--desktop">
+        <ul class="account__menu-list">
+          <li class="account__menu-list-item">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">История заказов</span>
+            </a>
+          </li>
+          <li class="account__menu-list-item account__menu-list-item--active">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Профиль</span>
+            </a>
+          </li>
+          <li class="account__menu-list-item">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Отзывы</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="account__menu account__menu--mobile custom-select slide-up" data-select="" data-name="account-menu" data-id="account-menu">
+        <span class="custom-select__label"></span><span class="custom-select__error"></span>
+        <button class="custom-select__button" type="button">
+          <span class="custom-select__text"></span><span class="custom-select__icon"></span>
+        </button>
+        <ul class="custom-select__list" role="listbox">
+          <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">
+            <a href="#" class="account__menu-link account__menu-link--1">
+              <span class="account__menu-link-text">История заказов</span>
+            </a>
+          </li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="true" role="option">
+            <a href="#" class="account__menu-link account__menu-link--2">
+              <span class="account__menu-link-text">Профиль</span>
+            </a>
+          </li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">
+            <a href="#" class="account__menu-link account__menu-link--3">
+              <span class="account__menu-link-text">Отзывы</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="account__content">
+        <form class="account__profile profile">
+          <div class="profile__photo upload-files">
+            <input class="upload-files__input" id="upload-files__input" type="file">
+            <label class="upload-files__label" for="upload-files__input">
+              <img src="img/content/user.png" class="profile__photo-img" width="170" height="170">
+            </label>
+          </div>
+          <button class="profile__edit">
+            <svg class="profile__edit-icon" width="16" height="16">
+              <use xlink:href="#icon-edit"></use>
+            </svg>
+            <span class="profile__edit-text">Редактировать</span>
+          </button>
+          <div class="profile__inputs">
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Фамилия</label>
+              <input type="text" class="profile__input" value="Иванова">
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Имя</label>
+              <input type="text" class="profile__input" value="Анна" required>
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Отчество</label>
+              <input type="text" class="profile__input" value="Константиновна">
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Населенный пункт</label>
+              <input type="text" class="profile__input" value="Санкт-Петербург">
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Телефон</label>
+              <input type="tel" class="profile__input" value="+7 (921) 333 22 11" required>
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">E-mail (необязательно)</label>
+              <input type="email" class="profile__input" value="Example@mail.ru">
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Ссылка на профиль в соцсетях</label>
+              <input type="text" class="profile__input" value="https//example.ru">
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Профиль в программе трекера</label>
+              <input type="text" class="profile__input" value="https//example.ru">
+            </div>
+          </div>
+          <button class="profile__submit btn">Сохранить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+.btn-back {
+  background-color: unset;
+  color: $color-dark-gray;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+
+  &:hover {
+    .btn-back__circle {
+      box-shadow: 0px 8px 30px -4px rgba(30, 30, 30, 0.4);
+    }
+  }
+}
+.btn-back__circle {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-default-white;
+  box-shadow: 0px 8px 30px -4px rgba(30, 30, 30, 0.2);
+  border-radius: 50%;
+  transition: box-shadow $trans-default;
+  margin-right: 14px;
+}
+.btn-back__icon {
+  transform: rotate(180deg);
+}

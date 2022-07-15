@@ -1,0 +1,34 @@
+.custom-checkbox {
+  font-size: 12px;
+}
+.custom-checkbox__input {
+  opacity: 0;
+  position: absolute;
+
+  &:checked {
+    + .custom-checkbox__label {
+      &::before {
+        opacity: 1;
+        background-color: $color-dark-cerulean;
+        background-image: url('../img/svg/check.svg');
+        background-position: center center;
+      }
+    }
+  }
+}
+.custom-checkbox__label {
+  display: flex;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    border: 1px solid $color-gainsboro;
+    border-radius: 6px;
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+}

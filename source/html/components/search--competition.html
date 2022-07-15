@@ -1,0 +1,76 @@
+<section class="search">
+  <div class="container">
+    <div class="search__header">
+      <h2 class="search__title search__title--black">Соревнования</h2>
+      <button class="search__add btn btn--light btn--add">Добавить соревнование</button>
+    </div>
+    
+    <form class="search__form">
+      <button class="search__form-back-btn">
+        <svg class="search__form-back-btn-icon" width="20" height="20">
+          <use xlink:href="#icon-back"></use>
+        </svg>
+        <span>Назад</span>
+      </button>
+      <div class="search__form-item">
+        <p class="search__form-item-title">Страна</p>
+        <div class="search__form-item-select custom-select" data-select>
+          <span class="custom-select__label"></span>
+          <span class="custom-select__error"></span>
+          <span class="custom-select__placeholder"></span>
+          <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
+            <span class="custom-select__text"></span>
+            <span class="custom-select__icon"></span>
+          </button>
+          <ul class="custom-select__list">
+            <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true">Все</li>
+            <li class="custom-select__item" tabindex="0" data-select-value="id-2">Санкт-Петербург</li>
+          </ul>
+        </div>
+      </div>
+      <div class="search__form-item search__form-item--column-3">
+        <p class="search__form-item-title">Статус</p>
+        <div class="search__form-item-select custom-select" data-select>
+          <span class="custom-select__label"></span>
+          <span class="custom-select__error"></span>
+          <span class="custom-select__placeholder"></span>
+          <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
+            <span class="custom-select__text"></span>
+            <span class="custom-select__icon"></span>
+          </button>
+          <ul class="custom-select__list">
+            <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true">Все</li>
+            <li class="custom-select__item" tabindex="0" data-select-value="id-2">Санкт-Петербург</li>
+          </ul>
+        </div>
+      </div>
+      <div class="search__form-item">
+        <p class="search__form-item-title">Месяц</p>
+        <div class="search__form-item-select custom-select" data-select>
+          <span class="custom-select__label"></span>
+          <span class="custom-select__error"></span>
+          <span class="custom-select__placeholder"></span>
+          <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
+            <span class="custom-select__text"></span>
+            <span class="custom-select__icon"></span>
+          </button>
+          <ul class="custom-select__list">
+            <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true">Все</li>
+            <li class="custom-select__item" tabindex="0" data-select-value="id-2">Санкт-Петербург</li>
+          </ul>
+        </div>
+      </div>
+      <button class="search__form-submit btn">Обновить</button>
+    </form>
+    <div class="search__form-sorting search__form-sorting--mobile">
+      <a href="#" class="search__form-sorting-button search__form-sorting-button--active">По популярности</a>
+      <a href="#" class="search__form-sorting-button">По цене</a>
+      <button class="search__form-filters-btn">
+        <svg class="search__form-filters-btn-icon" width="20" height="20">
+          <use xlink:href="#icon-filter"></use>
+        </svg>
+        <span>Фильтры</span>
+      </button>
+    </div>
+  </div>
+</section>

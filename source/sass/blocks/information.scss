@@ -1,0 +1,43 @@
+.information {
+  @include adaptiveDesktopToMobile('margin-top', 100, 50);
+}
+.information__section {
+
+  &:not(:last-child) {
+    @include adaptiveDesktopToMobile('margin-bottom', 40, 30);
+  }
+}
+.information__section-title {
+  font-weight: 600;
+  @include adaptiveDesktopToMobile('font-size', 20, 16);
+  text-transform: uppercase;
+  margin: 0 0 30px;
+}
+.information__list {
+  @include reset-list;
+
+}
+.information__list-item {
+  &:not(:last-child) {
+    @include adaptiveDesktopToMobile('margin-bottom', 40, 30);
+  }
+}
+.information__list-item-value {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $color-sorbus;
+  margin: 0 0 15px;
+}
+.information__sublist {
+  padding-left: 25px;
+}
+.information__sublist-item {
+  list-style-type: disc;
+
+  &::marker {
+    font-size: 10px;
+  }
+}
+.information__text {
+  max-width: 800px;
+}

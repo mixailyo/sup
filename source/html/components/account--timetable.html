@@ -1,0 +1,280 @@
+<section class="account">
+  <div class="container">
+    <div class="account__main-wrapper">
+      <h1 class="account__title">Личный кабинет школы</h1>
+      <nav class="account__menu account__menu--desktop">
+        <ul class="account__menu-list">
+          <li class="account__menu-list-item">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Профиль</span>
+            </a>
+          </li>
+          <li class="account__menu-list-item">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Карточка школы</span>
+            </a>
+          </li>
+          <li class="account__menu-list-item">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Расписание</span>
+            </a>
+          </li>
+          <li class="account__menu-list-item account__menu-list-item--active">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Программы</span>
+            </a>
+          </li>
+          <li class="account__menu-list-item">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Инструкторы</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="account__menu account__menu--mobile custom-select slide-up" data-select="" data-name="account-menu" data-id="account-menu">
+        <span class="custom-select__label"></span><span class="custom-select__error"></span>
+        <button class="custom-select__button" type="button">
+          <span class="custom-select__text"></span><span class="custom-select__icon"></span>
+        </button>
+        <ul class="custom-select__list" role="listbox">
+          <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Профиль</span>
+            </a>
+          </li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Карточка школы</span>
+            </a>
+          </li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Расписание</span>
+            </a>
+          </li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="true" role="option">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Программы</span>
+            </a>
+          </li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Инструкторы</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="account__content">
+        <section class="account__timetable timetable">
+          <div class="timetable__wrapper">
+            <div class="timetable__header">
+              <div class="timetable__month">Май, 2022</div>
+              <div class="timetable__navigation">
+                <button class="navigation-button navigation-button--prev">
+                  <svg class="navigation-button__icon" width="24" height="24">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </button>
+                <div class="timetable__period">
+                  15.06 – 21.06
+                </div>
+                <button class="navigation-button navigation-button--next">
+                  <svg class="navigation-button__icon" width="24" height="24">
+                    <use xlink:href="#icon-arrow"></use>
+                  </svg>
+                </button>
+              </div>
+              <button class="timetable__edit">
+                <svg class="timetable__edit-icon" width="16" height="16">
+                  <use xlink:href="#icon-edit"></use>
+                </svg>
+                <span class="timetable__edit-text">Редактировать</span>
+              </button>
+            </div>
+            <div class="timetable__table">
+              <div class="timetable__table-column">
+                <div class="timetable__table-column-day-of-the-week">Понедельник</div>
+                <div class="timetable__table-column-wrapper">
+                  <div class="timetable__table-column-day-number">15</div>
+                  <ul class="timetable__table-column-lessons">
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--blue">
+                      <div class="timetable__table-column-lesson-time">7:00</div>
+                      <div class="timetable__table-column-lesson-name">Индивидуальное занятие</div>
+                    </li>
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--red">
+                      <div class="timetable__table-column-lesson-time">12:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для взрослых</div>
+                    </li>
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--yellow">
+                      <div class="timetable__table-column-lesson-time">19:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для детей</div>
+                    </li>
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--red">
+                      <div class="timetable__table-column-lesson-time">20:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для взрослых</div>
+                    </li>
+                    <li class="timetable__table-column-add">
+                      <button class="timetable__table-column-add-btn" data-open-modal="add-lesson">+ Добавить</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timetable__table-column">
+                <div class="timetable__table-column-day-of-the-week">Вторник</div>
+                <div class="timetable__table-column-wrapper">
+                  <div class="timetable__table-column-day-number">16</div>
+                  <ul class="timetable__table-column-lessons">
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--yellow">
+                      <div class="timetable__table-column-lesson-time">12:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для детей</div>
+                    </li>
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--red">
+                      <div class="timetable__table-column-lesson-time">19:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для взрослых</div>
+                    </li>
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--red">
+                      <div class="timetable__table-column-lesson-time">20:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для взрослых</div>
+                    </li>
+                    <li class="timetable__table-column-add">
+                      <button class="timetable__table-column-add-btn" data-open-modal="add-lesson">+ Добавить</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timetable__table-column">
+                <div class="timetable__table-column-day-of-the-week">Среда</div>
+                <div class="timetable__table-column-wrapper">
+                  <div class="timetable__table-column-day-number">17</div>
+                  <ul class="timetable__table-column-lessons">
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--blue">
+                      <div class="timetable__table-column-lesson-time">7:00</div>
+                      <div class="timetable__table-column-lesson-name">Индивидуальное занятие</div>
+                    </li>
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--red">
+                      <div class="timetable__table-column-lesson-time">12:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для взрослых</div>
+                    </li>
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--yellow">
+                      <div class="timetable__table-column-lesson-time">19:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для детей</div>
+                    </li>
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--red">
+                      <div class="timetable__table-column-lesson-time">20:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для взрослых</div>
+                    </li>
+                    <li class="timetable__table-column-add">
+                      <button class="timetable__table-column-add-btn" data-open-modal="add-lesson">+ Добавить</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timetable__table-column">
+                <div class="timetable__table-column-day-of-the-week">Четверг</div>
+                <div class="timetable__table-column-wrapper">
+                  <div class="timetable__table-column-day-number">18</div>
+                  <ul class="timetable__table-column-lessons">
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--yellow">
+                      <div class="timetable__table-column-lesson-time">12:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для детей</div>
+                    </li>
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--red">
+                      <div class="timetable__table-column-lesson-time">19:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для взрослых</div>
+                    </li>
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--red">
+                      <div class="timetable__table-column-lesson-time">20:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для взрослых</div>
+                    </li>
+                    <li class="timetable__table-column-add">
+                      <button class="timetable__table-column-add-btn" data-open-modal="add-lesson">+ Добавить</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timetable__table-column">
+                <div class="timetable__table-column-day-of-the-week">Пятница</div>
+                <div class="timetable__table-column-wrapper">
+                  <div class="timetable__table-column-day-number">19</div>
+                  <ul class="timetable__table-column-lessons">
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--blue">
+                      <div class="timetable__table-column-lesson-time">19:00</div>
+                      <div class="timetable__table-column-lesson-name">Индивидуальное занятие</div>
+                    </li>
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--yellow">
+                      <div class="timetable__table-column-lesson-time">20:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для детей</div>
+                    </li>
+                    <li class="timetable__table-column-add">
+                      <button class="timetable__table-column-add-btn" data-open-modal="add-lesson">+ Добавить</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timetable__table-column">
+                <div class="timetable__table-column-day-of-the-week">Суббота</div>
+                <div class="timetable__table-column-wrapper">
+                  <div class="timetable__table-column-day-number">20</div>
+                  <ul class="timetable__table-column-lessons">
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--blue">
+                      <div class="timetable__table-column-lesson-time">7:00</div>
+                      <div class="timetable__table-column-lesson-name">Индивидуальное занятие</div>
+                    </li>
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--red">
+                      <div class="timetable__table-column-lesson-time">12:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для взрослых</div>
+                    </li>
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--yellow">
+                      <div class="timetable__table-column-lesson-time">19:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для детей</div>
+                    </li>
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--red">
+                      <div class="timetable__table-column-lesson-time">20:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для взрослых</div>
+                    </li>
+                    <li class="timetable__table-column-add">
+                      <button class="timetable__table-column-add-btn" data-open-modal="add-lesson">+ Добавить</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="timetable__table-column">
+                <div class="timetable__table-column-day-of-the-week">Воскресенье</div>
+                <div class="timetable__table-column-wrapper">
+                  <div class="timetable__table-column-day-number">21</div>
+                  <ul class="timetable__table-column-lessons">
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--blue">
+                      <div class="timetable__table-column-lesson-time">7:00</div>
+                      <div class="timetable__table-column-lesson-name">Индивидуальное занятие</div>
+                    </li>
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--red">
+                      <div class="timetable__table-column-lesson-time">12:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для взрослых</div>
+                    </li>
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--yellow">
+                      <div class="timetable__table-column-lesson-time">19:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для детей</div>
+                    </li>
+                    <li class="timetable__table-column-lesson timetable__table-column-lesson--red">
+                      <div class="timetable__table-column-lesson-time">20:00</div>
+                      <div class="timetable__table-column-lesson-name">Групповое занятие для взрослых</div>
+                    </li>
+                    <li class="timetable__table-column-add">
+                      <button class="timetable__table-column-add-btn" data-open-modal="add-lesson">+ Добавить</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="timetable__submit btn">Сохранить</button>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+@@include("source/html/base/modal.html", {
+  "name": "add-lesson",
+  "fitContent": true,
+})

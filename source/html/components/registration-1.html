@@ -1,0 +1,35 @@
+<section class="sign-in">
+  <img src="img/bg/sign-in.png" class="sign-in__picture">
+  <div class="container">
+    <div class="sign-in__wrapper">
+      <div class="sign-in__content">
+        <button class="btn-back" onclick="window.history.back()">
+          <div class="btn-back__circle">
+            <svg class="btn-back__icon" width="24" height="24">
+              <use xlink:href="#icon-arrow"></use>
+            </svg>
+          </div>
+          <span>Назад</span>
+        </button>
+        <form class="sign-in__form">
+          <h2 class="sign-in__form-title">Регистрация</h2>
+          <div class="sign-in__form-wrapper">
+            <div class="sign-in__radio-wrapper">
+              <input id="role-client" type="radio" name="role" class="sign-in__form-input" checked>
+              <label for="role-client" class="sign-in__form-label">Я клиент</label>
+            </div>
+            <div class="sign-in__radio-wrapper">
+              <input id="role-organization" type="radio" name="role" class="sign-in__form-input">
+              <label for="role-organization" class="sign-in__form-label">Я сап прокат</label>
+            </div>
+          </div>
+          <button class="sign-in__form-submit btn">Далее</button>
+        </form>
+        <div class="sign-in__registration">
+          <span class="sign-in__registration-text">Уже зарегистрированы?</span>
+          <a href="#" class="sign-in__registration-link">Войти тут</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

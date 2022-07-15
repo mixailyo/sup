@@ -60,13 +60,15 @@
     position: relative;
 
     width: 600px;
-    padding: 40px;
+    padding: 30px;
 
     background-color: $color-default-white;
+    box-shadow: 0px 8px 30px -4px rgba(30, 30, 30, 0.2);
+    border-radius: 16px;
 
     @include vp-767 {
       width: 100%;
-      padding: 20px;
+      padding: 30px 15px;
     }
   }
 
@@ -116,4 +118,38 @@
 
     pointer-events: auto;
   }
+}
+
+.modal__form {
+  @include adaptiveDesktopToMobile('width', 410, 315);
+}
+.modal__title {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 50px;
+}
+.modal__input-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+.modal__label {
+  font-size: 12px;
+  color: $color-nobel;
+  @include adaptiveDesktopToMobile('padding-left', 20, 15);
+  margin-bottom: 5px;
+}
+.modal__input {
+  border: 1px solid $color-gainsboro;
+  border-radius: 4px;
+  min-height: 40px;
+  padding: 10px 20px;
+}
+.modal__form-submit {
+  margin: 50px auto 0;
 }

@@ -1,0 +1,111 @@
+.cards {
+  overflow: hidden;
+  @include adaptiveDesktopToMobile('padding-top', 120, 70);
+
+  .swiper-slide {
+    @include adaptiveDesktopToMobile('width', 470, 230);
+    @include adaptiveDesktopToMobile('margin-right', 30, 20);
+  }
+}
+.cards__list {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @include adaptiveDesktopToMobile('column-gap', 30, 15);
+  @include adaptiveDesktopToMobile('row-gap', 60, 40);
+  @include adaptiveDesktopToMobile('margin-bottom', 80, 60);
+
+  @include vp-767 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.cards__title {
+  margin: 0;
+  @include adaptiveDesktopToMobile('margin-bottom', 20, 10);
+
+  @include vp-767 {
+    font-weight: 600;
+  }
+}
+.cards__top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include adaptiveDesktopToMobile('margin-bottom', 50, 30);
+}
+.cards__description {
+  @include adaptiveDesktopToMobile('font-size', 16, 12);
+  max-width: 80%;
+}
+.cards__more {
+  display: flex;
+  align-items: center;
+  color: $color-sorbus;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+
+  @include vp-767 {
+    display: none;
+  }
+}
+.navigation-button__icon {
+}
+.cards__slider {
+  overflow: visible;
+
+  @include vp-767 {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      @include adaptiveDesktopToMobile('right', -40, -15);
+      width: 38%;
+      height: 100%;
+      background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 176.5%);
+      z-index: 2;
+      pointer-events: none;
+    }
+  }
+}
+.cards__slider-navigation {
+  .navigation-button {
+    position: absolute;
+    top: 30%;
+    z-index: 3;
+
+    &--prev {
+      @include adaptiveDesktopToMobile('left', -25, 0);
+    }
+
+    &--next {
+      @include adaptiveDesktopToMobile('right', -25, 0);
+    }
+  }
+}
+.cards__pagination {
+  @include adaptiveDesktopToMobile('margin-bottom', 110, 70);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards__pagination-button {
+}
+.cards__pagination-pages {
+  @include reset-list;
+
+  display: flex;
+  margin: 0 28px;
+}
+.cards__pagination-page {
+  margin: 0 12px;
+}
+.cards__pagination-link {
+  font-weight: 600;
+  font-size: 20px;
+  color: $color-silver;
+
+  &--active {
+    color: $color-sorbus;
+  }
+}

@@ -1,0 +1,56 @@
+.reviews {
+}
+.reviews__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include adaptiveDesktopToMobile('margin-bottom', 50, 30);
+}
+.reviews__title {
+  margin: 0;
+  
+  font-weight: 600;
+  @include adaptiveDesktopToMobile('font-size', 24, 16);
+  text-transform: uppercase;
+}
+.reviews__add {
+}
+.reviews__slider {
+  overflow: visible;
+
+  .swiper-slide {
+    @include adaptiveDesktopToMobile('margin-right', 30, 20);
+  }
+
+  @include vp-767 {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      @include adaptiveDesktopToMobile('right', -40, -15);
+      width: 35%;
+      height: 100%;
+      background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 176.5%);
+      z-index: 2;
+      pointer-events: none;
+    }
+  }
+}
+.reviews__slider-navigation {
+  .navigation-button {
+    position: absolute;
+    top: 40%;
+    z-index: 3;
+
+    &--prev {
+      @include adaptiveDesktopToMobile('left', -25, 0);
+    }
+
+    &--next {
+      @include adaptiveDesktopToMobile('right', -25, 0);
+    }
+  }
+}
+
+
+

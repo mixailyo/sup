@@ -1,0 +1,110 @@
+.profile {
+  @include adaptiveDesktopToMobile('width', 570, 345);
+  background: $color-default-white;
+  box-shadow: 0px 8px 30px -4px rgba(30, 30, 30, 0.2);
+  border-radius: 16px;
+  @include adaptiveDesktopToMobile('padding-top', 60, 50);
+  @include adaptiveDesktopToMobile('padding-bottom', 60, 40);
+  @include adaptiveDesktopToMobile('padding-right', 60, 15);
+  @include adaptiveDesktopToMobile('padding-left', 60, 15);
+
+  &--edit {
+    .profile__edit {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+.profile__title {
+  margin: 0;
+  font-weight: 600;
+  @include adaptiveDesktopToMobile('font-size', 24, 18);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.profile__photo {
+  @include adaptiveDesktopToMobile('margin-bottom', 50, 30);
+}
+.profile__photo-img {
+  @include adaptiveDesktopToMobile('width', 170, 100);
+  @include adaptiveDesktopToMobile('height', 170, 100);
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+.profile__photo-text {
+}
+.profile__photo-text-parapgraph {
+  margin: 0;
+  font-size: 12px;
+  color: $color-dim-gray;
+
+  &--primary {
+    font-weight: 500;
+    color: $color-sorbus;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+.profile__edit {
+  background: unset;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  color: $color-sorbus;
+  margin-top: -25px;
+  margin-bottom: 5px;
+  @include adaptiveDesktopToMobile('font-size', 16, 14);
+
+  @include vp-767 {
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
+.profile__edit-icon {
+  margin-right: 5px;
+}
+.profile__edit-text {
+}
+.profile__inputs {
+  margin-bottom: 30px;
+}
+.profile__input-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+.profile__label {
+  font-size: 12px;
+  color: $color-nobel;
+  @include adaptiveDesktopToMobile('padding-left', 20, 15);
+  margin-bottom: 5px;
+}
+.profile__input {
+  border: 1px solid $color-gainsboro;
+  border-radius: 4px;
+  min-height: 40px;
+  padding: 10px 20px;
+}
+.profile__agree {
+  &:not(:first-child) {
+    @include adaptiveDesktopToMobile('margin-top', 20, 15);
+  }
+}
+.profile__submit {
+  margin: 0 auto;
+  @include adaptiveDesktopToMobile('margin-top', 40, 25);
+}
+.profile__files {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}

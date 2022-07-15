@@ -1,0 +1,11 @@
+.another {
+  @include adaptiveDesktopToMobile('margin-bottom', 90, 75);
+
+  @include vp-767 {
+    .cards__list-item {
+      &:nth-child(n + 3) {
+        display: none;
+      }
+    }
+  }
+}

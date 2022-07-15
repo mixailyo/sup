@@ -1,0 +1,23 @@
+.raiting {
+  width: 160px;
+  height: 24px;
+  background-size: 100% auto;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+
+  &--1 {
+    background-image: url('../img/svg/raiting-1.svg');
+  }
+  &--2 {
+    background-image: url('../img/svg/raiting-2.svg');
+  }
+  &--3 {
+    background-image: url('../img/svg/raiting-3.svg');
+  }
+  &--4 {
+    background-image: url('../img/svg/raiting-4.svg');
+  }
+  &--5 {
+    background-image: url('../img/svg/raiting-5.svg');
+  }
+}

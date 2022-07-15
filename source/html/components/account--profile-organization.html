@@ -1,0 +1,148 @@
+<section class="account">
+  <div class="container">
+    <div class="account__main-wrapper">
+      <h1 class="account__title">Личный кабинет школы</h1>
+      <nav class="account__menu account__menu--desktop">
+        <ul class="account__menu-list">
+          <li class="account__menu-list-item account__menu-list-item--active">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Профиль</span>
+            </a>
+          </li>
+          <li class="account__menu-list-item">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Карточка школы</span>
+            </a>
+          </li>
+          <li class="account__menu-list-item">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Расписание</span>
+            </a>
+          </li>
+          <li class="account__menu-list-item">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Программы</span>
+            </a>
+          </li>
+          <li class="account__menu-list-item">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Инструкторы</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="account__menu account__menu--mobile custom-select slide-up" data-select="" data-name="account-menu" data-id="account-menu">
+        <span class="custom-select__label"></span><span class="custom-select__error"></span>
+        <button class="custom-select__button" type="button">
+          <span class="custom-select__text"></span><span class="custom-select__icon"></span>
+        </button>
+        <ul class="custom-select__list" role="listbox">
+          <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true" role="option">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Профиль</span>
+            </a>
+          </li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Карточка школы</span>
+            </a>
+          </li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Расписание</span>
+            </a>
+          </li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Программы</span>
+            </a>
+          </li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Инструкторы</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="account__content">
+        <form class="account__profile profile">
+          <button class="profile__edit">
+            <svg class="profile__edit-icon" width="16" height="16">
+              <use xlink:href="#icon-edit"></use>
+            </svg>
+            <span class="profile__edit-text">Редактировать</span>
+          </button>
+          <div class="profile__inputs">
+            <div class="profile__input-wrapper">
+              <label class="profile__label">ФИО руководителя</label>
+              <input type="text" class="profile__input" value="Иван Иванович Иванов">
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Телефон руководителя</label>
+              <input type="tel" class="profile__input" value="+ 7 (921) 333 22 11" required>
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">ФИО контактного лица</label>
+              <input type="text" class="profile__input" value="Иван Иванович Иванов">
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Телефон контактного лица</label>
+              <input type="tel" class="profile__input" value="+ 7 (921) 333 22 11">
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Тип собственности</label>
+              <input type="text" class="profile__input" value="ООО" required>
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Юридическое название</label>
+              <input type="text" class="profile__input" value="Стандарт">
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">ИНН</label>
+              <input type="number" class="profile__input" value="873787207">
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">КПП</label>
+              <input type="number" class="profile__input" value="873787207">
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">ОГРН</label>
+              <input type="number" class="profile__input" value="873787207">
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Адрес для доставки документов</label>
+              <input type="text" class="profile__input" value="Москва, ул. Ленина 5">
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Email</label>
+              <input type="email" class="profile__input" value="example@mail.ru">
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Система налогообложения</label>
+              <input type="text" class="profile__input" value="Упрощеная">
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Генеральный директор (для ООО)</label>
+              <input type="text" class="profile__input" value="Иван Иванович Иванов">
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Банковские реквизиты</label>
+              <textarea type="text" class="profile__input" rows="4">Банковские реквизиты</textarea>
+            </div>
+          </div>
+          <div class="profile__checkboxes">
+            <div class="profile__agree custom-checkbox">
+              <input id="agree-1" type="checkbox" class="custom-checkbox__input" required checked>
+              <label for="agree-1" class="custom-checkbox__label">Согласие с офертой, политикой о персональных данных, агентским договором (для тех, кто хочет продавать туры)</label>
+            </div>
+            <div class="profile__agree custom-checkbox">
+              <input id="agree-2" type="checkbox" class="custom-checkbox__input" required checked>
+              <label for="agree-2" class="custom-checkbox__label">Поручаю SUP-прогулки продавать мои мероприятия. С агентским договором согласен.</label>
+            </div>
+          </div>
+          <button class="profile__submit btn">Сохранить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

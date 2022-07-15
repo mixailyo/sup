@@ -1,0 +1,29 @@
+.breadcrumbs {
+  padding: 20px 0 40px;
+}
+.breadcrumbs__link {
+  font-size: 12px;
+  color: $color-dark-gray;
+  transition: color $trans-default;
+
+  &:hover {
+    color: $color-sorbus;
+  }
+
+  &:not(:last-child) {
+    margin-right: 26px;
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -25px;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      background-image: url('../img/svg/breadcrumbs-arrow.svg');
+      background-size: cover;
+    }
+  }
+}

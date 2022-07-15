@@ -1,0 +1,182 @@
+<section class="account">
+  <div class="container">
+    <div class="account__main-wrapper">
+      <h1 class="account__title">Личный кабинет школы</h1>
+      <nav class="account__menu account__menu--desktop">
+        <ul class="account__menu-list">
+          <li class="account__menu-list-item">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Профиль</span>
+            </a>
+          </li>
+          <li class="account__menu-list-item account__menu-list-item--active">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Карточка школы</span>
+            </a>
+          </li>
+          <li class="account__menu-list-item">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Расписание</span>
+            </a>
+          </li>
+          <li class="account__menu-list-item">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Программы</span>
+            </a>
+          </li>
+          <li class="account__menu-list-item">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Инструкторы</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="account__menu account__menu--mobile custom-select slide-up" data-select="" data-name="account-menu" data-id="account-menu">
+        <span class="custom-select__label"></span><span class="custom-select__error"></span>
+        <button class="custom-select__button" type="button">
+          <span class="custom-select__text"></span><span class="custom-select__icon"></span>
+        </button>
+        <ul class="custom-select__list" role="listbox">
+          <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Профиль</span>
+            </a>
+          </li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="true" role="option">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Карточка школы</span>
+            </a>
+          </li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Расписание</span>
+            </a>
+          </li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Программы</span>
+            </a>
+          </li>
+          <li class="custom-select__item" tabindex="0" data-select-value="id-5" aria-selected="false" role="option">
+            <a href="#" class="account__menu-link">
+              <span class="account__menu-link-text">Инструкторы</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="account__content">
+        <form class="account__profile profile">
+          <div class="profile__photo upload-files">
+            <input class="upload-files__input" id="upload-files__input" type="file">
+            <label class="upload-files__label" for="upload-files__input">
+              <img src="img/svg/photo-placeholder.svg" class="profile__photo-img" width="170" height="170">
+            </label>
+          </div>
+          <button class="profile__edit">
+            <svg class="profile__edit-icon" width="16" height="16">
+              <use xlink:href="#icon-edit"></use>
+            </svg>
+            <span class="profile__edit-text">Редактировать</span>
+          </button>
+          <div class="profile__inputs">
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Название для клиентов</label>
+              <input type="text" class="profile__input" value="Стандарт">
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Адрес станции или выдачи инвентаря</label>
+              <input type="text" class="profile__input" value="Москва, ул. Ленина 5" required>
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Телефон для бронирования и записи клиентами</label>
+              <input type="tel" class="profile__input" value="+ 7 (921) 333 22 11">
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Короткое описание</label>
+              <textarea type="text" class="profile__input" rows="4">Текст</textarea>
+            </div>
+            <div class="profile__input-wrapper">
+              <label class="profile__label">Полное описание</label>
+              <textarea type="text" class="profile__input" rows="4">Текст</textarea>
+            </div>
+            <div class="profile__files upload-files">
+              <h3 class="upload-files__title">Фотографии</h3>
+              <ul class="upload-files__list upload-files__list--uploaded">
+                <li class="upload-files__file upload-files__file--uploaded">
+                  <svg class="upload-files__file-icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="#upload-file"></use>
+                  </svg>
+                  <p class="upload-files__file-name">Photo_1365.jpg</p>
+                  <button class="upload-files__file-delete" data-file-name="Photo_1365.jpg">
+                    <svg class="upload-files__file-delete-icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="#file-delete"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="upload-files__file upload-files__file--uploaded">
+                  <svg class="upload-files__file-icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="#upload-file"></use>
+                  </svg>
+                  <p class="upload-files__file-name">Photo_1366.jpg</p>
+                  <button class="upload-files__file-delete" data-file-name="Photo_1366.jpg">
+                    <svg class="upload-files__file-delete-icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="#file-delete"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+              <ul class="upload-files__list"></ul>
+              <input class="upload-files__input" id="upload-files__input-photo" type="file" multiple>
+              <label class="upload-files__label" for="upload-files__input-photo">
+                <svg class="upload-files__label-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#upload-pic"></use>
+                </svg>
+                <p class="upload-files__label-description upload-files__label-description--desktop">Нажмите на поле или перетащите в него файл</p>
+                <p class="upload-files__label-description upload-files__label-description--mobile">Нажмите на поле</p>
+                <p class="upload-files__label-size">Максимальный вес файла 5 Мб</p>
+              </label>
+            </div>
+            <div class="profile__files upload-files">
+              <h3 class="upload-files__title">Видео</h3>
+              <ul class="upload-files__list upload-files__list--uploaded">
+                <li class="upload-files__file upload-files__file--uploaded">
+                  <svg class="upload-files__file-icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="#upload-file"></use>
+                  </svg>
+                  <p class="upload-files__file-name">Video_1365.mp4</p>
+                  <button class="upload-files__file-delete" data-file-name="Video_1365.mp4">
+                    <svg class="upload-files__file-delete-icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="#file-delete"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="upload-files__file upload-files__file--uploaded">
+                  <svg class="upload-files__file-icon" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="#upload-file"></use>
+                  </svg>
+                  <p class="upload-files__file-name">Video_1366.mp4</p>
+                  <button class="upload-files__file-delete" data-file-name="Video_1366.mp4">
+                    <svg class="upload-files__file-delete-icon" width="24" height="24" aria-hidden="true">
+                      <use xlink:href="#file-delete"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+              <ul class="upload-files__list"></ul>
+              <input class="upload-files__input" id="upload-files__input-video" type="file" multiple>
+              <label class="upload-files__label" for="upload-files__input-video">
+                <svg class="upload-files__label-icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#upload-pic"></use>
+                </svg>
+                <p class="upload-files__label-description upload-files__label-description--desktop">Нажмите на поле или перетащите в него файл</p>
+                <p class="upload-files__label-description upload-files__label-description--mobile">Нажмите на поле</p>
+                <p class="upload-files__label-size">Максимальный вес файла 5 Мб</p>
+              </label>
+            </div>
+          </div>
+          <button class="profile__submit btn">Сохранить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

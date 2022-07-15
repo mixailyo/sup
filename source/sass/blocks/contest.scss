@@ -1,0 +1,26 @@
+.contest {
+  display: grid;
+  grid-template-columns: 1fr 2.29fr 1.53fr 2.06fr;
+  min-width: 860px;
+  @include adaptiveDesktopToMobile('font-size', 18, 14);
+
+  &:nth-child(odd) {
+    background: $color-white-smoke;
+  }
+}
+.contest__date {
+  @include adaptiveDesktopToMobile('padding', 20, 15);
+}
+.contest__description {
+  @include adaptiveDesktopToMobile('padding', 20, 15);
+}
+.contest__link {
+  color: $color-sorbus;
+}
+.contest__city {
+  @include adaptiveDesktopToMobile('padding', 20, 15);
+}
+.contest__status {
+  @include adaptiveDesktopToMobile('padding', 20, 15);
+}
+

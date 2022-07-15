@@ -1,0 +1,70 @@
+<section class="registration">
+  <div class="container">
+    <div class="registration__wrapper">
+      <button class="registration__btn-back btn-back" onclick="window.history.back()">
+        <div class="btn-back__circle">
+          <svg class="btn-back__icon" width="24" height="24">
+            <use xlink:href="#icon-arrow"></use>
+          </svg>
+        </div>
+        <span>Назад</span>
+      </button>
+      <form class="registration__profile profile">
+        <h2 class="profile__title">Регистрация</h2>
+        <div class="profile__photo upload-files">
+          <input class="upload-files__input" id="upload-files__input" type="file">
+          <label class="upload-files__label" for="upload-files__input">
+            <img src="img/svg/photo-placeholder.svg" class="profile__photo-img" width="170" height="170">
+            <div class="profile__photo-text">
+              <p class="profile__photo-text-parapgraph profile__photo-text-parapgraph--primary">Загрузите фото</p>
+              <p class="profile__photo-text-parapgraph">
+                Файл PNG или JPG.<br>
+                Минимальный размер 170х170 px
+              </p>
+            </div>
+          </label>
+
+        </div>
+        <div class="profile__inputs">
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Фамилия</label>
+            <input type="text" class="profile__input">
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Имя</label>
+            <input type="text" class="profile__input" required>
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Отчество</label>
+            <input type="text" class="profile__input">
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Населенный пункт</label>
+            <input type="text" class="profile__input">
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Телефон</label>
+            <input type="tel" class="profile__input" required>
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">E-mail (необязательно)</label>
+            <input type="email" class="profile__input">
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Ссылка на профиль в соцсетях</label>
+            <input type="text" class="profile__input">
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Профиль в программе трекера</label>
+            <input type="text" class="profile__input">
+          </div>
+        </div>
+        <div class="profile__agree custom-checkbox">
+          <input id="agree" type="checkbox" class="custom-checkbox__input" required>
+          <label for="agree" class="custom-checkbox__label">Отправляя персональные данные из этой формы, вы даете согласие на обработку персональных данных</label>
+        </div>
+        <button class="profile__submit btn">Зарегистрироваться</button>
+      </form>
+    </div>
+  </div>
+</section>

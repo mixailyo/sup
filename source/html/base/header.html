@@ -1,35 +1,96 @@
-<header class="header @@if (context.mod) { header--@@mod }">
+<header class="header">
   <div class="container">
-    @@if (!context.index) {
-      <a class="header__logo" href="index.html" aria-label="Переход на главную">
-        Логотип
+    <div class="header__wrapper">
+      <a href="#" class="header__logo">
+        <img src="img/content/logo-header.png" alt="Sup-progulki" class="header__logo-pic" width="170" height="36">
       </a>
-    }
-    @@if (context.index) {
-      <span class="header__logo">
-        Логотип
-      </span>
-    }
-
-    <nav class="main-nav">
-      <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-        <svg width="20" height="20" aria-hidden="true">
-          <use xlink:href="#icon-burger"></use>
-        </svg>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 0) { is-active }" @@if (context.headerActiveLinkIndex !== 0) { href="#" }>Страница 1</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { is-active }" @@if (context.headerActiveLinkIndex !== 1) { href="#" }>Страница 2</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { is-active }" @@if (context.headerActiveLinkIndex !== 2) { href="#" }>Страница 3</a>
-          </li>
-        </ul>
+      <div class="header__left-wrapper">
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-list-item header__menu-list-item--desktop">
+              <button href="#" class="header__menu-button">
+                <svg class="header__menu-button-icon" width="16" height="16">
+                  <use xlink:href="#icon-hamburger"></use>
+                </svg>
+                <span class="header__menu-button-text">Меню</span>
+              </button>
+              <nav class="header__submenu">
+                <ul class="header__submenu-list">
+                  <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-link">Школы и станции</a>
+                  </li>
+                  <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-link">Прогулки</a>
+                  </li>
+                  <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-link">Прогулки</a>
+                  </li>
+                  <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-link">Фестивали</a>
+                  </li>
+                  <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-link">Кэмпы</a>
+                  </li>
+                  <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-link">Тренировки</a>
+                  </li>
+                  <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-link">Соревнования</a>
+                  </li>
+                  <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-link">Туры</a>
+                  </li>
+                  <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-link">О проекте</a>
+                  </li>
+                </ul>
+              </nav>
+            </li>
+            <li class="header__menu-list-item">
+              <a href="#" class="header__menu-link">Школы и станции</a>
+            </li>
+            <li class="header__menu-list-item">
+              <a href="#" class="header__menu-link">Туры</a>
+            </li>
+            <li class="header__menu-list-item">
+              <a href="#" class="header__menu-link">Прогулки</a>
+            </li>
+            <li class="header__menu-list-item">
+              <a href="#" class="header__menu-link">Тренировки</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__city-select custom-select" data-select>
+          <span class="custom-select__label"></span>
+          <span class="custom-select__error"></span>
+          <span class="custom-select__placeholder"></span>
+          <button class="custom-select__button" type="button" aria-label="Выберите одну из опций">
+            <span class="custom-select__text"></span>
+            <span class="custom-select__icon"></span>
+          </button>
+          <ul class="custom-select__list">
+            <li class="custom-select__item" tabindex="0" data-select-value="id-1" aria-selected="true">Москва</li>
+            <li class="custom-select__item" tabindex="0" data-select-value="id-2">Санкт-Петербург</li>
+          </ul>
+        </div>
       </div>
-    </nav>
+      <div class="header__right-wrapper">
+        <a href="#" class="header__search">
+          <svg class="header__search-icon" width="24" height="24">
+            <use xlink:href="#icon-search"></use>
+          </svg>
+        </a>
+        <a href="#" class="header__sign-in">
+          <svg class="header__sign-in-icon" width="24" height="24">
+            <use xlink:href="#icon-sign-in"></use>
+          </svg>
+        </a>
+      </div>
+      <button class="header__hamburger hamburger hamburger--slider" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
   </div>
 </header>

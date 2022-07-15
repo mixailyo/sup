@@ -1,0 +1,132 @@
+<section class="registration">
+  <div class="container">
+    <div class="registration__wrapper">
+      <button class="registration__btn-back btn-back" onclick="window.history.back()">
+        <div class="btn-back__circle">
+          <svg class="btn-back__icon" width="24" height="24">
+            <use xlink:href="#icon-arrow"></use>
+          </svg>
+        </div>
+        <span>Назад</span>
+      </button>
+      <form class="registration__profile profile">
+        <h2 class="profile__title">Регистрация</h2>
+        <div class="profile__photo upload-files">
+          <input class="upload-files__input" id="profile__photo-input" type="file">
+          <label class="upload-files__label" for="profile__photo-input">
+            <img src="img/svg/photo-placeholder.svg" class="profile__photo-img" width="170" height="170">
+            <div class="profile__photo-text">
+              <p class="profile__photo-text-parapgraph profile__photo-text-parapgraph--primary">Загрузите фото</p>
+              <p class="profile__photo-text-parapgraph">
+                Файл PNG или JPG.<br>
+                Минимальный размер 170х170 px
+              </p>
+            </div>
+          </label>
+
+        </div>
+        <div class="profile__inputs">
+          <div class="profile__input-wrapper">
+            <label class="profile__label">ФИО руководителя</label>
+            <input type="text" class="profile__input">
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Телефон руководителя</label>
+            <input type="tel" class="profile__input" required>
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">ФИО контактного лица</label>
+            <input type="text" class="profile__input">
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Телефон контактного лица</label>
+            <input type="tel" class="profile__input">
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Адрес станции или точки выдачи инвентаря (если есть)</label>
+            <input type="text" class="profile__input" required>
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Телефон для бронирования и записи клиентами</label>
+            <input type="tel" class="profile__input">
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Описание</label>
+            <textarea type="text" class="profile__input" rows="4"></textarea>
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Тип собственности</label>
+            <input type="text" class="profile__input">
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Юридическое название</label>
+            <input type="text" class="profile__input">
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">ИНН</label>
+            <input type="number" class="profile__input">
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">КПП</label>
+            <input type="number" class="profile__input">
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">ОГРН</label>
+            <input type="number" class="profile__input">
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Адрес для доставки документов</label>
+            <input type="text" class="profile__input">
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Email</label>
+            <input type="email" class="profile__input">
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Система налогообложения</label>
+            <input type="text" class="profile__input">
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Генеральный директор (для ООО)</label>
+            <input type="text" class="profile__input">
+          </div>
+          <div class="profile__input-wrapper">
+            <label class="profile__label">Банковские реквизиты</label>
+            <textarea type="text" class="profile__input" rows="4"></textarea>
+          </div>
+          <div class="profile__files upload-files">
+            <h3 class="upload-files__title">Фотографии</h3>
+            <ul class="upload-files__list"></ul>
+            <input class="upload-files__input" id="upload-files__input-photo" type="file" multiple>
+            <label class="upload-files__label" for="upload-files__input-photo">
+              <svg class="upload-files__label-icon" width="24" height="24" aria-hidden="true">
+                <use xlink:href="#upload-pic"></use>
+              </svg>
+              <p class="upload-files__label-description upload-files__label-description--desktop">Нажмите на поле или перетащите в него файл</p>
+              <p class="upload-files__label-description upload-files__label-description--mobile">Нажмите на поле</p>
+              <p class="upload-files__label-size">Максимальный вес файла 5 Мб</p>
+            </label>
+          </div>
+          <div class="profile__files upload-files">
+            <h3 class="upload-files__title">Видео</h3>
+            <ul class="upload-files__list"></ul>
+            <input class="upload-files__input" id="upload-files__input-video" type="file" multiple>
+            <label class="upload-files__label" for="upload-files__input-video">
+              <svg class="upload-files__label-icon" width="24" height="24" aria-hidden="true">
+                <use xlink:href="#upload-pic"></use>
+              </svg>
+              <p class="upload-files__label-description upload-files__label-description--desktop">Нажмите на поле или перетащите в него файл</p>
+              <p class="upload-files__label-description upload-files__label-description--mobile">Нажмите на поле</p>
+              <p class="upload-files__label-size">Максимальный вес файла 5 Мб</p>
+            </label>
+          </div>
+        </div>
+        <div class="profile__agree custom-checkbox">
+          <input id="agree" type="checkbox" class="custom-checkbox__input" required>
+          <label for="agree" class="custom-checkbox__label">Отправляя персональные данные из этой формы, вы даете согласие на обработку персональных данных</label>
+        </div>
+        <button class="profile__submit btn">Зарегистрироваться</button>
+      </form>
+    </div>
+  </div>
+</section>

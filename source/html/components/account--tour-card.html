@@ -1,0 +1,75 @@
+<section class="account">
+  <div class="container">
+    <div class="account__utility-wrapper">
+      <button class="btn-back" onclick="window.history.back()">
+        <div class="btn-back__circle">
+          <svg class="btn-back__icon" width="24" height="24">
+            <use xlink:href="#icon-arrow"></use>
+          </svg>
+        </div>
+        <span>Назад</span>
+      </button>
+      <form class="account__add-form profile">
+        <h2 class="account__add-form-title">Карточка тура</h2>
+        <div class="profile__input-wrapper">
+          <label class="profile__label">Карточка тура</label>
+          <input type="text" class="profile__input">
+        </div>
+        <div class="profile__input-wrapper">
+          <label class="profile__label">Адрес старта</label>
+          <input type="text" class="profile__input">
+        </div>
+        <div class="profile__input-wrapper">
+          <label class="profile__label">Продолжительность</label>
+          <input type="text" class="profile__input">
+        </div>
+        <div class="profile__input-wrapper">
+          <label class="profile__label">Протяженность</label>
+          <input type="text" class="profile__input">
+        </div>
+        <div class="profile__input-wrapper">
+          <label class="profile__label">Город</label>
+          <input type="text" class="profile__input">
+        </div>
+        <div class="profile__input-wrapper">
+          <label class="profile__label">Навыки райдера</label>
+          <input type="text" class="profile__input">
+        </div>
+        <div class="profile__input-wrapper">
+          <label class="profile__label">Ограничения</label>
+          <input type="text" class="profile__input">
+        </div>
+        <div class="profile__input-wrapper">
+          <label class="profile__label">Цена</label>
+          <input type="text" class="profile__input">
+        </div>
+        <div class="profile__input-wrapper">
+          <label class="profile__label">Дата проведения</label>
+          <input type="text" class="profile__input">
+        </div>
+        <div class="profile__input-wrapper">
+          <label class="profile__label">Описание</label>
+          <textarea type="text" class="profile__input" rows="4"></textarea>
+        </div>
+        <div class="profile__files upload-files">
+          <h3 class="upload-files__title">Фотографии</h3>
+          <ul class="upload-files__list"></ul>
+          <input class="upload-files__input" id="upload-files__input-photo" type="file" multiple>
+          <label class="upload-files__label" for="upload-files__input-photo">
+            <svg class="upload-files__label-icon" width="24" height="24" aria-hidden="true">
+              <use xlink:href="#upload-pic"></use>
+            </svg>
+            <p class="upload-files__label-description upload-files__label-description--desktop">Нажмите на поле или перетащите в него файл</p>
+            <p class="upload-files__label-description upload-files__label-description--mobile">Нажмите на поле</p>
+            <p class="upload-files__label-size">Максимальный вес файла 5 Мб</p>
+          </label>
+        </div>
+        <div class="profile__input-wrapper">
+          <label class="profile__label">Программа</label>
+          <textarea type="text" class="profile__input" rows="4"></textarea>
+        </div>
+        <button class="profile__submit btn">Сохранить</button>
+      </form>
+    </div>
+  </div>
+</section>

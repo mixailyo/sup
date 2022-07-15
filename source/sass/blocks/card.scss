@@ -1,0 +1,105 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &--with-ad {
+    position: relative;
+
+    &::before {
+      content: 'Реклама';
+      position: absolute;
+      @include adaptiveDesktopToMobile('top', 15, 10);
+      @include adaptiveDesktopToMobile('left', 15, 10);
+      background: $color-sorbus;
+      border-radius: 30px;
+      @include adaptiveDesktopToMobile('width', 95, 75);
+      @include adaptiveDesktopToMobile('height', 25, 20);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color-default-white;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 10px;
+      z-index: 1;
+    }
+  }
+
+  &:hover {
+    .card__title {
+      color: $color-sorbus;
+    }
+
+    .card__picture {
+      transform: scale(1.1);
+    }
+  }
+}
+.card__picture-wrapper {
+  overflow: hidden;
+  margin: 0 0 20px;
+}
+.card__picture {
+  transition: transform $trans-default;
+}
+.card__suptitle {
+  font-weight: 600;
+  @include adaptiveDesktopToMobile('font-size', 16, 12);
+  color: $color-sorbus;
+  text-transform: uppercase;
+  margin: 0;
+  @include adaptiveDesktopToMobile('margin-bottom', 10, 0);
+}
+.card__title {
+  margin: 0;
+  @include adaptiveDesktopToMobile('margin-bottom', 15, 5);
+  transition: color $trans-default;
+}
+.card__price {
+  font-weight: 600;
+  @include adaptiveDesktopToMobile('font-size', 14, 12);
+  text-transform: uppercase;
+  color: $color-dark-cerulean;
+  @include adaptiveDesktopToMobile('margin-bottom', 20, 15);
+}
+.card__description {
+  margin: 0;
+  @include adaptiveDesktopToMobile('font-size', 16, 12);
+
+  p {
+    margin: 0;
+    @include adaptiveDesktopToMobile('margin-bottom', 5, 0);
+  }
+}
+.card__description-paragraph {
+  text-transform: uppercase;
+
+  &--primary {
+    font-weight: 600;
+    color: $color-sorbus;
+  }
+}
+.card__more {
+  @include adaptiveDesktopToMobile('margin-top', 25, 20);
+  
+  @include vp-767 {
+    width: 100%;
+  }
+}
+.card__subtitle {
+  font-weight: 600;
+  @include adaptiveDesktopToMobile('font-size', 16, 12);
+  text-transform: uppercase;
+}
+.card__raiting {
+  margin-top: auto;
+  @include adaptiveDesktopToMobile('height', 40, 35);
+}
+.card__school {
+  font-weight: 500;
+  @include adaptiveDesktopToMobile('font-size', 16, 12);
+  text-transform: uppercase;
+  color: $color-sorbus;
+  @include adaptiveDesktopToMobile('margin-top', 15, 10);
+}
