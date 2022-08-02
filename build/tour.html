@@ -551,7 +551,14 @@
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл и передан модификатор `some-mod`</p>
+        <form class="modal__form">
+          <h3 class="modal__title">Успех</h3>
+          <div class="modal__description">
+            Вы&nbsp;успешно зарегистрированы на&nbsp;соревнования. Подтверждение выслано вам по&nbsp;указанному номеру.
+          </div>
+          <div class="modal__success-telephone">+7 955 332 45 45</div>
+          <button class="modal__form-submit btn" data-modal-close>Хорошо</button>
+        </form>
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
           <svg width="30" height="30">
             <use xlink:href="#icon-close"></use>

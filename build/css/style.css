@@ -3573,6 +3573,7 @@ body.account-page {
 
 .modal__form {
   width: 410px;
+  padding-top: 40px;
 }
 
 .modal__title {
@@ -3611,8 +3612,41 @@ body.account-page {
   padding: 10px 20px;
 }
 
+.modal__input.date-select {
+  border-radius: 4px;
+}
+
+.modal__input.date-select::after {
+  width: 16px;
+  height: 16px;
+  right: 20px;
+  background-image: url(../img/svg/icon-date-light.svg);
+}
+
+.modal__input.date-select--time::after {
+  background-image: url(../img/svg/icon-time.svg);
+}
+
 .modal__form-submit {
   margin: 50px auto 0;
+}
+
+.modal__separator {
+  margin: 40px 0 30px;
+  height: 1px;
+  background-color: #DDDDDD;
+}
+
+.modal__description {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.modal__success-telephone {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
 }
 
 .btn {

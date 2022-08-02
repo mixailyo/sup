@@ -13,7 +13,7 @@ import {uploadProfilePhoto} from './blocks/upload-profile-photo';
 import {uploadFiles} from './blocks/upload-files';
 import {profile} from './blocks/profile';
 import {timetable} from './blocks/timetable';
-
+import {makeAnAppoinment} from './blocks/make-an-appoinment';
 
 // ---------------------------------
 
@@ -43,6 +43,7 @@ window.addEventListener('DOMContentLoaded', () => {
     uploadFiles();
     profile();
     timetable();
+    makeAnAppoinment();
   });
 });
 

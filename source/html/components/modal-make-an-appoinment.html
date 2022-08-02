@@ -1,0 +1,30 @@
+<form class="modal__form">
+  <h3 class="modal__title">Записаться</h3>
+  <div class="modal__input-wrapper">
+    <label class="modal__label">Имя</label>
+    <input type="text" class="modal__input" required>
+  </div>
+  <div class="modal__input-wrapper">
+    <label class="modal__label">Фамилия</label>
+    <input type="text" class="modal__input" required>
+  </div>
+  <div class="modal__input-wrapper">
+    <label class="modal__label">Телефон</label>
+    <input type="tel" class="modal__input" required>
+  </div>
+  <div class="modal__separator"></div>
+  <div class="modal__input-wrapper">
+    <label class="modal__label">Выберите дату</label>
+    <input class="modal__input date-select" type="date" data-value="">
+  </div>
+  <div class="modal__input-wrapper">
+    <label class="modal__label">Выберите время</label>
+    <input class="modal__input date-select date-select--time" type="time" data-value="">
+  </div>
+
+  <div class="profile__agree custom-checkbox">
+    <input id="agree" type="checkbox" class="custom-checkbox__input" required>
+    <label for="agree" class="custom-checkbox__label">Отправляя персональные данные из этой формы, вы даете согласие на обработку персональных данных</label>
+  </div>
+  <button class="modal__form-submit btn">Оставить заявку</button>
+</form>
