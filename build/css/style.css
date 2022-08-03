@@ -4103,9 +4103,14 @@ body.account-page {
 .card__picture-wrapper {
   overflow: hidden;
   margin: 0 0 20px;
+  aspect-ratio: 1 / 1;
 }
 
 .card__picture {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   -o-transition: transform 0.3s ease;

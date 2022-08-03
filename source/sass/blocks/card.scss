@@ -39,8 +39,12 @@
 .card__picture-wrapper {
   overflow: hidden;
   margin: 0 0 20px;
+  aspect-ratio: 1 / 1;
 }
 .card__picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   transition: transform $trans-default;
 }
 .card__suptitle {
