@@ -5413,6 +5413,9 @@ body.account-page {
   top: 0;
   left: 0;
   max-width: 50vw;
+  min-height: 100vh;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .sign-in__wrapper {
