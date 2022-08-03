@@ -14,6 +14,8 @@ import {uploadFiles} from './blocks/upload-files';
 import {profile} from './blocks/profile';
 import {timetable} from './blocks/timetable';
 import {makeAnAppoinment} from './blocks/make-an-appoinment';
+import {maskTelephone} from './blocks/mask-telephone';
+
 
 // ---------------------------------
 
@@ -44,6 +46,7 @@ window.addEventListener('DOMContentLoaded', () => {
     profile();
     timetable();
     makeAnAppoinment();
+    maskTelephone();
   });
 });
 
