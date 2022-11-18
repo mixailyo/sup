@@ -2355,7 +2355,6 @@ html {
 
 body {
   width: 100%;
-  height: 100%;
   background-color: #ffffff;
 }
 
@@ -2918,7 +2917,7 @@ body.account-page {
   opacity: 1;
 }
 
-.custom-select[data-disabled="true"] {
+.custom-select [data-disabled="true"] {
   cursor: default;
   color: #b5b5b5;
   pointer-events: none;
@@ -3665,6 +3664,8 @@ body.account-page {
   height: 40px;
   background: #DF6435;
   border-radius: 30px;
+  border: unset;
+  cursor: pointer;
   padding: 10px 40px;
   padding-left: 40px;
   padding-right: 40px;
@@ -3686,6 +3687,12 @@ body.account-page {
   background: unset;
   color: #DF6435;
   border: 1px solid #DF6435;
+}
+
+.banner__slider {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .banner__slider .swiper-pagination {
@@ -3997,6 +4004,9 @@ body.account-page {
 
 .cards__slider {
   overflow: visible;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .cards__slider-navigation .navigation-button {
@@ -4103,10 +4113,14 @@ body.account-page {
 .card__picture-wrapper {
   overflow: hidden;
   margin: 0 0 20px;
-  aspect-ratio: 1 / 1;
+  position: relative;
+  padding-top: 100%;
 }
 
 .card__picture {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -5957,6 +5971,22 @@ body.account-page {
   margin-bottom: 15px;
 }
 
+.profile__select {
+  padding: 0;
+  width: 100%;
+}
+
+.profile__select .custom-select__button {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: 40px;
+  padding: 0 20px;
+}
+
+.profile__select .custom-select__item {
+  padding: 5px 20px;
+}
+
 .custom-checkbox {
   font-size: 12px;
 }
@@ -6241,6 +6271,38 @@ body.account-page {
   color: #DF6435;
   margin-left: auto;
   text-align: right;
+}
+
+.account__programms-section-empty {
+  background: #ffffff;
+  border-radius: 16px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 60px;
+  margin-bottom: 90px;
+}
+
+.account__programms-section-empty-description {
+  font-weight: 600;
+  line-height: 130%;
+  margin: 25px 0;
+  font-size: 16px;
+}
+
+.account__programms-section-empty-add {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #DF6435;
+  font-size: 14px;
 }
 
 .account__timetable {
@@ -7335,6 +7397,22 @@ body.account-page {
 
   .account__programms-section-header {
     margin-bottom: calc(20px + 10 * ((100vw - 375px) / 1545));
+  }
+
+  .account__programms-section-empty {
+    padding: calc(30px + 30 * ((100vw - 375px) / 1545));
+  }
+
+  .account__programms-section-empty {
+    margin-bottom: calc(45px + 45 * ((100vw - 375px) / 1545));
+  }
+
+  .account__programms-section-empty-description {
+    font-size: calc(14px + 2 * ((100vw - 375px) / 1545));
+  }
+
+  .account__programms-section-empty-add {
+    font-size: calc(12px + 2 * ((100vw - 375px) / 1545));
   }
 }
 

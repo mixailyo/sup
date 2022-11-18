@@ -247,6 +247,31 @@
   text-align: right;
 }
 
+.account__programms-section-empty {
+  background: $color-default-white;
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include adaptiveDesktopToMobile('padding', 60, 30);
+  @include adaptiveDesktopToMobile('margin-bottom', 90, 45);
+}
+.account__programms-section-empty-image {
+}
+.account__programms-section-empty-description {
+  font-weight: 600;
+  line-height: 130%;
+  margin: 25px 0;
+  @include adaptiveDesktopToMobile('font-size', 16, 14);
+}
+.account__programms-section-empty-add {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $color-sorbus;
+  @include adaptiveDesktopToMobile('font-size', 14, 12);
+}
+
 .account__timetable {
   max-width: 868px;
 

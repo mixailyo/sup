@@ -1,6 +1,7 @@
 .cards {
   overflow: hidden;
   @include adaptiveDesktopToMobile('padding-top', 120, 70);
+  
 
   .swiper-slide {
     @include adaptiveDesktopToMobile('width', 470, 230);
@@ -53,6 +54,7 @@
 }
 .cards__slider {
   overflow: visible;
+  height: fit-content;
 
   @include vp-767 {
     &::before {

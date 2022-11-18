@@ -6,6 +6,8 @@
   height: 40px;
   background: $color-sorbus;
   border-radius: 30px;
+  border: unset;
+  cursor: pointer;
   padding: 10px 40px;
   @include adaptiveDesktopToMobile('padding-left', 40, 35);
   @include adaptiveDesktopToMobile('padding-right', 40, 35);

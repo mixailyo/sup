@@ -266,7 +266,7 @@
     }
   }
 
-  &[data-disabled="true"] {
+  [data-disabled="true"] {
     cursor: default;
     color: #b5b5b5;
     pointer-events: none;

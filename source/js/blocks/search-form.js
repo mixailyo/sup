@@ -11,16 +11,16 @@ function searchForm() {
         e.preventDefault();
       });
 
-      searchFormSubmitBtn.addEventListener('click', () => {
+      searchFormSubmitBtn?.addEventListener('click', () => {
         form.submit();
       });
 
-      searchFormFiltersBtn.addEventListener('click', () => {
+      searchFormFiltersBtn?.addEventListener('click', () => {
         form.classList.add('search__form--active');
         document.body.classList.add('scroll-lock');
       });
 
-      searchFormBackBtn.addEventListener('click', () => {
+      searchFormBackBtn?.addEventListener('click', () => {
         form.classList.remove('search__form--active');
         document.body.classList.remove('scroll-lock');
       });
